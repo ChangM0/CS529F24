@@ -1,0 +1,18 @@
+﻿  FALL2024.cpp
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\FALL2024.cpp(11,22): warning C4305: '正在初始化': 從 'double' 轉換為 'const float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+  Matrix4.cpp
+  Vector4.cpp
+  VectorTemplated.cpp
+  正在產生程式碼...
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Vector4.cpp(19,1): error C4716: 'Vector3::operator*': 必須傳回值
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Vector4.cpp(39,1): error C4716: 'Vector3::normalized': 必須傳回值
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Vector4.cpp(24,1): error C4716: 'Vector3::dot': 必須傳回值
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Vector4.cpp(14,1): error C4716: 'Vector3::operator-': 必須傳回值
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Vector4.cpp(9,1): error C4716: 'Vector3::operator+': 必須傳回值
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Vector4.cpp(34,1): error C4716: 'Vector3::magnitudSquared': 必須傳回值
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Vector4.cpp(44,1): error C4716: 'Vector3::cross': 必須傳回值
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Vector4.cpp(29,1): error C4716: 'Vector3::magnitude': 必須傳回值
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Matrix4.cpp(16,1): error C4716: 'Matrix4::getElement': 必須傳回值
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Matrix4.cpp(32,1): error C4700: 使用了未初始化的區域變數 'z'
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Matrix4.cpp(32,1): error C4700: 使用了未初始化的區域變數 'y'
+C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Matrix4.cpp(32,1): error C4700: 使用了未初始化的區域變數 'x'
