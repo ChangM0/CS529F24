@@ -18,7 +18,9 @@ public:
     VectorTemplated operator+(const VectorTemplated& other) const {
         VectorTemplated result;
         // Write implementation here
-		
+        for (size_t i = 0; i < N; ++i) {
+            result[i] = data[i] + other[i];
+        }
         return result;
     }
 
@@ -26,7 +28,9 @@ public:
     VectorTemplated operator-(const VectorTemplated& other) const {
         VectorTemplated result;
         // Write implementation here
-		
+        for (size_t i = 0; i < N; ++i) {
+            result[i] = data[i] - other[i];
+        }
         return result;
     }
 
@@ -34,7 +38,9 @@ public:
     VectorTemplated operator*(T scalar) const {
         VectorTemplated result;
         // Write implementation here
-		
+        for (size_t i = 0; i < N; ++i) {
+            result[i] = data[i] * scalar;
+        }
         return result;
     }
 
@@ -42,27 +48,33 @@ public:
     T dot(const VectorTemplated& other) const {
         T result = 0;
         // Write implementation here
-		
+        for (size_t i = 0; i < N; ++i) {
+            result[i] = data[i] * other[i];
+        }
         return result;
     }
 
     T magnitudeSquared() const {
         // Write implementation here
+
     }
 
     // Formula: sqrt(v1^2 + v2^2 + ... + vn^2)
     T magnitude() const {
         // Write implementation here
+
     }
 
     // Formula: v / |v|, where |v| is the magnitude
     VectorTemplated normalized() const {
        // Write implementation here
+
     }
 
     // Specific to 3D vectors
     // Formula: [v2*u3 - v3*u2, v3*u1 - v1*u3, v1*u2 - v2*u1]
     VectorTemplated cross(const VectorTemplated& other) const {
         // Write implementation here
+
     }
 };

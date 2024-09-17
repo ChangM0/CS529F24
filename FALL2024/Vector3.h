@@ -15,6 +15,7 @@ public:
     // Parameterized Constructor with Initialization List
     Vector3(float x, float y, float z) : x(x), y(y), z(z) {}
 
+
     // Operator overloads
     Vector3 operator+(const Vector3& other) const; // the const in behind define func to be a const func
     Vector3 operator-(const Vector3& other) const;
