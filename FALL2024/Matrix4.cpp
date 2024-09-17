@@ -70,7 +70,10 @@ Matrix4 Matrix4::rotationX(float angle)
 {
     Matrix4 result;
     // Write implementation here
-	
+    result.data[1][1] = cosf(angle);
+    result.data[1][2] = -sinf(angle);
+    result.data[2][1] = sinf(angle);
+    result.data[2][2] = cosf(angle);
     return result;
 }
 
@@ -78,7 +81,10 @@ Matrix4 Matrix4::rotationY(float angle)
 {
     Matrix4 result;
     // Write implementation here
-	
+    result.data[0][0] = cosf(angle);
+    result.data[0][2] = sinf(angle);
+    result.data[2][0] = -sinf(angle);
+    result.data[2][2] = cosf(angle);
     return result;
 }
 
@@ -86,6 +92,9 @@ Matrix4 Matrix4::rotationZ(float angle)
 {
     Matrix4 result;
     // Write implementation here
-	
+    result.data[0][0] = cosf(angle);
+    result.data[0][1] = -sinf(angle);
+    result.data[1][0] = sinf(angle);
+    result.data[1][1] = cosf(angle);
     return result;
 }
