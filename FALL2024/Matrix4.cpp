@@ -3,7 +3,15 @@
 Matrix4::Matrix4()
 {
 	// Write implementation here
-
+    {
+        Matrix4 result;
+        
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                result.data[i][j] = 0;
+            }
+        }
+    }
 }
 
 void Matrix4::updateElement(int row, int col, float value)
@@ -40,9 +48,12 @@ Matrix4 Matrix4::operator*(const Matrix4& other)
 
 Vector3 Matrix4::operator*(const Vector3& vec) const
 {
-	float x,y,z;
+	float x=0,y=0,z=0;
     // Write implementation here
-
+    Matrix4 result;
+    x = result.data[0][0] * vec.x + result.data[0][1] * vec.y + result.data[0][2] * vec.z;
+    y = result.data[1][0] * vec.x + result.data[1][1] * vec.y + result.data[1][2] * vec.z;
+    z = result.data[2][0] * vec.x + result.data[2][1] * vec.y + result.data[2][2] * vec.z;
     return Vector3(x, y, z);
 }
 

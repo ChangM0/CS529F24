@@ -1,6 +1,1 @@
-﻿  Matrix4.cpp
-  VectorTemplated.cpp
-  正在產生程式碼...
-C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Matrix4.cpp(46,1): error C4700: 使用了未初始化的區域變數 'z'
-C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Matrix4.cpp(46,1): error C4700: 使用了未初始化的區域變數 'y'
-C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\FALL2024\Matrix4.cpp(46,1): error C4700: 使用了未初始化的區域變數 'x'
+﻿LINK : fatal error LNK1168: cannot open C:\Users\m0\Documents\digipen\cs529-engine\FALL2024\x64\Debug\FALL2024.exe for writing
