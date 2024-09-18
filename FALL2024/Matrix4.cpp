@@ -4,11 +4,9 @@ Matrix4::Matrix4()
 {
 	// Write implementation here
     {
-        Matrix4 result;
-        
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                result.data[i][j] = 0;
+                data[i][j] = 0;
             }
         }
     }
@@ -17,15 +15,13 @@ Matrix4::Matrix4()
 void Matrix4::updateElement(int row, int col, float value)
 {
 	// Write implementation here
-    Matrix4 result;
-    result.data[row][col] = value;
+    data[row][col] = value;
 }
 
 float Matrix4::getElement(int row, int col) const
 {
     // Write implementation here
-    Matrix4 result;
-    return result.data[row][col];
+    return data[row][col];
 }
 
 Matrix4 Matrix4::operator*(const Matrix4& other)
